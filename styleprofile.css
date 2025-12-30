@@ -1,4 +1,4 @@
-/* Reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -7,14 +7,14 @@
   scroll-behavior: smooth;
 }
 
-/* Body */
+
 body {
   background: #0f0f0f;
   color: #fff;
   line-height: 1.6;
 }
 
-/* Navbar */
+
 header {
   position: fixed;
   width: 100%;
@@ -45,7 +45,6 @@ header nav a.active {
   color: #ff4500;
 }
 
-/* Home Section */
 .home {
   display: flex;
   justify-content: center;
@@ -91,7 +90,6 @@ header nav a.active {
   color: #ddd;
 }
 
-/* Social Icons */
 .social-icons a {
   display: inline-block;
   margin-right: 15px;
@@ -104,7 +102,6 @@ header nav a.active {
   color: #ff4500;
 }
 
-/* Button */
 .btn {
   display: inline-block;
   margin-top: 20px;
@@ -121,9 +118,7 @@ header nav a.active {
   background: #e63900;
 }
 
-/* ////// */
-/* //////// */
-/* Menu icon */
+
 #menu-icon {
   font-size: 1.8rem;
   color: white;
@@ -131,7 +126,6 @@ header nav a.active {
   cursor: pointer;
 }
 
-/* Responsive navbar */
 @media (max-width: 768px) {
   #menu-icon {
     display: block;
@@ -168,14 +162,12 @@ section {
   color: #ff4500;
 }
 
-/* About */
 .about p {
   max-width: 700px;
   margin: auto;
   color: #ddd;
 }
 
-/* Skills */
 .skill-box {
   max-width: 500px;
   margin: 15px auto;
@@ -186,7 +178,6 @@ section {
   justify-content: space-between;
 }
 
-/* Projects */
 .project-card {
   background: #1c1c1c;
   padding: 25px;
@@ -200,7 +191,75 @@ section {
   color: #ff4500;
 }
 
-/* Contact */
 .contact span {
   color: #ff4500;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 20px 20px;
+  }
+
+  .home {
+    flex-direction: column;
+    padding: 100px 20px;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .home-img img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .home-content h1 {
+    font-size: 2rem;
+  }
+
+  .home-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .home-content p {
+    font-size: 0.9rem;
+  }
+
+  section {
+    padding: 80px 20px;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .skill-box {
+    padding: 12px 20px;
+  }
+
+  .project-card {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .home-content h3 {
+    font-size: 1rem;
+  }
+
+  .home-img img {
+    width: 150px;
+    height: 150px;
+  }
+
+  section {
+    padding: 60px 15px;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
 }
